@@ -1,0 +1,55 @@
+{
+  "name": "core23/monolog-filters",
+  "type": "library",
+  "description": "Advanced filters for monolog.",
+  "keywords": [
+    "symfony",
+    "bundle",
+    "monolog",
+    "filter"
+  ],
+  "homepage": "https://core23.de",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Gripp",
+      "email": "mail@core23.de"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "monolog/monolog": "^1.10",
+    "symfony/http-foundation": "^3.4 || ^4.0",
+    "symfony/http-kernel": "^3.4 || ^4.0"
+  },
+  "require-dev": {
+    "matthiasnoback/symfony-dependency-injection-test": "^1.1",
+    "phpunit/phpunit": "^5.7",
+    "sebastian/exporter": "^2.0",
+    "symfony/dependency-injection": "^3.4 || ^4.0",
+    "symfony/expression-language": "^3.4 || ^4.0",
+    "symfony/framework-bundle": "^3.4 || ^4.0",
+    "symfony/phpunit-bridge": "^4.0"
+  },
+  "suggest": {
+    "symfony/framework-bundle": "If you want to use symfony"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core23\\MonologFilters\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Core23\\MonologFilters\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.x-dev"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
