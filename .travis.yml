@@ -40,7 +40,7 @@ matrix:
 
 install:
  - wget "http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar" --output-document="${HOME}/bin/php-cs-fixer" && chmod u+x "${HOME}/bin/php-cs-fixer"
- - wget "https://github.com/php-coveralls/php-coveralls/releases/download/v2.0.0/php-coveralls.phar" --output-document="${HOME}/bin/coveralls" && chmod u+x "${HOME}/bin/coveralls"
+ - wget "https://github.com/php-coveralls/php-coveralls/releases/download/v2.0.0/php-coveralls.phar" --output-document="${HOME}/bin/php-coveralls" && chmod u+x "${HOME}/bin/php-coveralls"
  - if [ "$SYMFONY_VERSION" != "" ]; then composer require "symfony/symfony:${SYMFONY_VERSION}" --no-update; fi;
  - if [ "$TARGET" == "lint" ]; then gem install yaml-lint && composer global require --dev sllh/composer-lint --no-update; fi
  - if [ "$TARGET" == "phpstan" ]; then composer global require --dev phpstan/phpstan:^0.9 --no-update; fi
@@ -49,5 +49,5 @@ install:
 
 script: make $TARGET
 
-after_script:
- - coveralls -v
+after_success:
+ - php-coveralls -v
