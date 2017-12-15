@@ -12,5 +12,8 @@ lint:
 	php-cs-fixer fix --verbose
 	git diff --exit-code
 
+phpstan:
+	phpstan analyse -c phpstan.neon -l 4 src tests
+
 test:
 	./vendor/bin/phpunit
