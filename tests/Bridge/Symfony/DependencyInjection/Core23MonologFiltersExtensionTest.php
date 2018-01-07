@@ -19,6 +19,8 @@ class Core23MonologFiltersExtensionTest extends AbstractExtensionTestCase
     public function testLoadDefault(): void
     {
         $this->load();
+
+        $this->assertTrue(true);
     }
 
     protected function getContainerExtensions(): array
