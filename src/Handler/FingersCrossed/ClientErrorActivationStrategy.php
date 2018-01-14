@@ -32,7 +32,7 @@ final class ClientErrorActivationStrategy extends ErrorLevelActivationStrategy
      *
      * @param RequestStack $requestStack
      * @param array        $excludedUrls
-     * @param string       $actionLevel
+     * @param int          $actionLevel
      */
     public function __construct(RequestStack $requestStack, array $excludedUrls, $actionLevel)
     {
