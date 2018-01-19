@@ -29,7 +29,7 @@ final class Core23MonologFiltersExtension extends Extension
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
 
-        $container->getDefinition('core23.monolog.activation_strategy.client_error')
+        $container->getDefinition('core23_monolog.activation_strategy.client_error')
             ->replaceArgument(1, $config['handlers']['excluded_404s'])
             ->replaceArgument(2, $config['handlers']['action_level']);
     }
