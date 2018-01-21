@@ -14,7 +14,7 @@ namespace Core23\MonologFilters\Tests\Bridge\Symfony\DependencyInjection;
 use Core23\MonologFilters\Bridge\Symfony\DependencyInjection\Core23MonologFiltersExtension;
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
 
-class Core23MonologFiltersExtensionTest extends AbstractExtensionTestCase
+final class Core23MonologFiltersExtensionTest extends AbstractExtensionTestCase
 {
     public function testLoadDefault(): void
     {
