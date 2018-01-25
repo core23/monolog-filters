@@ -17,7 +17,7 @@ This library adds more filters to [Monolog].
 ### Installation
 
 ```
-php composer.phar require core23/monolog-filters
+composer require core23/monolog-filters
 ```
 
 ### Symfony usage
