@@ -28,8 +28,6 @@ final class ClientErrorActivationStrategy extends ErrorLevelActivationStrategy
     private $requestStack;
 
     /**
-     * ClientErrorActivationStrategy constructor.
-     *
      * @param RequestStack $requestStack
      * @param array        $excludedUrls
      * @param int          $actionLevel
