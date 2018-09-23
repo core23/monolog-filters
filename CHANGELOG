@@ -1,3 +1,17 @@
+23/09/2018 12:57  0.2.1  Added explicit dependencies
+3a83188 Updated .editorconfig
+7b37436 TRAVIS: Moved dependencies check to allow failures
+fc518a8 Added missing dependencies
+39335d1 Removed useless PHPDoc
+74269a3 Sync config
+d2db4a2 Added composer-require-checker to build
+0c21d05 Sync phpstan config
+8e47400 phpstan findings
+f76c06a Require latest phpstan version
+46aa7c6 Normalize composer.json
+7e28513 Created issue templates
+2f179e7 Added old symfony/framework-bundle versions to conflict section
+1ccb1dd Don't use PHPUnit 7 yet
 27/01/2018 10:16  0.2.0  Changed service bundle prefix
 1bfbfbf Added missing .gitignore
 873b511 Improved documentation
