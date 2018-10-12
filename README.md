@@ -13,9 +13,6 @@ Monolog filters
 [![Code Climate](https://codeclimate.com/github/core23/monolog-filters/badges/gpa.svg)](https://codeclimate.com/github/core23/monolog-filters)
 [![Coverage Status](https://coveralls.io/repos/core23/monolog-filters/badge.svg)](https://coveralls.io/r/core23/monolog-filters)
 
-[![Donate to this project using Flattr](https://img.shields.io/badge/flattr-donate-yellow.svg)](https://flattr.com/profile/core23)
-[![Donate to this project using PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://paypal.me/gripp)
-
 This library adds more filters to [Monolog].
 
 ## Installation
