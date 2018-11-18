@@ -22,6 +22,10 @@ final class ClientErrorActiviationStrategyTest extends TestCase
 {
     /**
      * @dataProvider isActivatedProvider
+     *
+     * @param $url
+     * @param $record
+     * @param $expected
      */
     public function testIsActivated($url, $record, $expected): void
     {
