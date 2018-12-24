@@ -22,12 +22,16 @@ final class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
+        $treeBuilder = new TreeBuilder('core23_monolog');
 
-        /** @var ArrayNodeDefinition $node */
-        $node = $treeBuilder->root('core23_monolog');
+        // Keep compatibility with symfony/config < 4.2
+        if (!\method_exists($treeBuilder, 'getRootNode')) {
+            $rootNode = $treeBuilder->root('core23_monolog');
+        } else {
+            $rootNode = $treeBuilder->getRootNode();
+        }
 
-        $this->addLoggingSection($node);
+        $this->addLoggingSection($rootNode);
 
         return $treeBuilder;
     }
