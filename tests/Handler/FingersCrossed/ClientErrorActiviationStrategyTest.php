@@ -37,7 +37,7 @@ final class ClientErrorActiviationStrategyTest extends TestCase
         $this->assertSame($expected, $strategy->isHandlerActivated($record));
     }
 
-    public function isActivatedProvider()
+    public function isActivatedProvider(): array
     {
         return [
             ['/test',      ['level' => Logger::DEBUG], false],
@@ -59,7 +59,7 @@ final class ClientErrorActiviationStrategyTest extends TestCase
         ];
     }
 
-    protected function getContextException($code)
+    protected function getContextException($code): array
     {
         return ['exception' => new HttpException($code)];
     }
