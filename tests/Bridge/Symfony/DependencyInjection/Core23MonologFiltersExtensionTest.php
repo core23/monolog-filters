@@ -23,7 +23,7 @@ final class Core23MonologFiltersExtensionTest extends AbstractExtensionTestCase
         $this->assertTrue(true);
     }
 
-    protected function getContainerExtensions(): array
+    protected function getContainerExtensions()
     {
         return [
             new Core23MonologFiltersExtension(),
