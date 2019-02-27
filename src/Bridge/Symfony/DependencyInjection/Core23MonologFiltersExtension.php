@@ -31,6 +31,7 @@ final class Core23MonologFiltersExtension extends Extension
 
         $container->getDefinition('core23_monolog.activation_strategy.client_error')
             ->replaceArgument(1, $config['handlers']['excluded_404s'])
-            ->replaceArgument(2, $config['handlers']['action_level']);
+            ->replaceArgument(2, $config['handlers']['action_level'])
+        ;
     }
 }
