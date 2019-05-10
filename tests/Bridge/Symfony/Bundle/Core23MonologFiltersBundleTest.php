@@ -20,20 +20,20 @@ class Core23MonologFiltersBundleTest extends TestCase
     {
         $bundle = new Core23MonologFiltersBundle();
 
-        $this->assertInstanceOf(BundleInterface::class, $bundle);
+        static::assertInstanceOf(BundleInterface::class, $bundle);
     }
 
     public function testGetPath(): void
     {
         $bundle = new Core23MonologFiltersBundle();
 
-        $this->assertStringEndsWith('Bridge/Symfony/Bundle', \dirname($bundle->getPath()));
+        static::assertStringEndsWith('Bridge/Symfony/Bundle', \dirname($bundle->getPath()));
     }
 
     public function testGetContainerExtension(): void
     {
         $bundle = new Core23MonologFiltersBundle();
 
-        $this->assertInstanceOf(Core23MonologFiltersExtension::class, $bundle->getContainerExtension());
+        static::assertInstanceOf(Core23MonologFiltersExtension::class, $bundle->getContainerExtension());
     }
 }
