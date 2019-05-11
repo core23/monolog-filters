@@ -34,7 +34,7 @@ final class ClientErrorActiviationStrategyTest extends TestCase
 
         $strategy = new ClientErrorActivationStrategy($requestStack, ['^/foo', 'bar'], Logger::WARNING);
 
-        $this->assertSame($expected, $strategy->isHandlerActivated($record));
+        static::assertSame($expected, $strategy->isHandlerActivated($record));
     }
 
     public function isActivatedProvider(): array
