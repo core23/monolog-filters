@@ -1,17 +1,9 @@
+# DEPRECATED
+
+This library is deprecated, use [exclude_http_codes](https://www.symfony-news.com/news/details/new-in-symfony-4-1-ignore-specific-http-codes-from-logs) option or [HttpCodeActivationStrategy](https://github.com/symfony/monolog-bridge/blob/4.1/Handler/FingersCrossed/HttpCodeActivationStrategy.php) class instead.
+
 Monolog filters
 ===============
-[![Latest Stable Version](https://poser.pugx.org/core23/monolog-filters/v/stable)](https://packagist.org/packages/core23/monolog-filters)
-[![Latest Unstable Version](https://poser.pugx.org/core23/monolog-filters/v/unstable)](https://packagist.org/packages/core23/monolog-filters)
-[![License](https://poser.pugx.org/core23/monolog-filters/license)](LICENSE.md)
-
-[![Total Downloads](https://poser.pugx.org/core23/monolog-filters/downloads)](https://packagist.org/packages/core23/monolog-filters)
-[![Monthly Downloads](https://poser.pugx.org/core23/monolog-filters/d/monthly)](https://packagist.org/packages/core23/monolog-filters)
-[![Daily Downloads](https://poser.pugx.org/core23/antispam-bundle/d/daily)](https://packagist.org/packages/core23/antispam-bundle)
-
-[![Build Status](https://travis-ci.org/core23/monolog-filters.svg)](http://travis-ci.org/core23/monolog-filters)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/core23/monolog-filters/badges/quality-score.png)](https://scrutinizer-ci.com/g/core23/monolog-filters/)
-[![Code Climate](https://codeclimate.com/github/core23/monolog-filters/badges/gpa.svg)](https://codeclimate.com/github/core23/monolog-filters)
-[![Coverage Status](https://coveralls.io/repos/core23/monolog-filters/badge.svg)](https://coveralls.io/r/core23/monolog-filters)
 
 This library adds more filters to [Monolog].
 
